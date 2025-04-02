@@ -97,7 +97,7 @@ button:hover {
 .controls button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: grey;
     cursor: pointer;
 }
 
