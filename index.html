@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NP Color Mixer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NP</div>
+        <ul>
+            <li><a href="#" id="homeTab">Ana Sayfa</a></li>
+            <li><a href="#" id="favoritesTab">⭐ Favoriler</a></li>
+            <li><a href="#" id="deletedTab">🗑️ Çöp Kutusu</a></li>
+        </ul>
+    </nav>
+
+    <div id="container" class="container">
+        <header>
+            <h1>NP Color Mixer</h1>
+            <p>Karıştır, keşfet, kaydet! Kendine özel renk paletlerini oluştur.</p>
+        </header>
+
+        <section class="color-picker">
+            <div class="color-inputs">
+                <input type="color" id="color1" value="#ff0000">
+                <input type="color" id="color2" value="#00ff00">
+                <input type="color" id="color3" value="#0000ff">
+            </div>
+            <button id="mixButton">Renkleri Karıştır</button>
+        </section>
+
+        <section class="result">
+            <div id="mixedColor" class="color-box"></div>
+            <p id="hexCode">#FFFFFF</p>
+            <button id="addToPalette">Paletime Ekle</button>
+        </section>
+
+        <section class="palette-container">
+            <h2>Özel Renk Paletim</h2>
+            <div id="palette"></div>
+        </section>
+    </div>
+
+    <div id="favorites" class="hidden">
+        <h2>⭐ Favoriler</h2>
+        <div id="favoriteColors"></div>
+    </div>
+
+    <div id="deleted" class="hidden">
+        <h2>🗑️ Çöp Kutusu</h2>
+        <div id="deletedPalette"></div>
+    </div>
+
+</body>
+</html>
